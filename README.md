@@ -14,6 +14,8 @@
 
 [在同文件的initialised_github_repo中](./initialised_github_repo/initialised_github_repo.md)
 
+比较粗糙，将就看看。具体 git 使用方法推荐阅读《GitHub入门与实践》。
+
 ## 在线vscode的使用
 
 可直接看鱼皮视频笔记。
