@@ -10,9 +10,9 @@
 
 所以在这里将鱼皮视频的笔记加到了这个小仓库里，临时整合了我自己学习，[人人都能学会的编程入门课 (geekbang.org)](https://time.geekbang.org/column/intro/100043901?tab=catalog)的学习笔记，并在胡船长代码的基础上进行了些微的整理与完善。如有侵权请联系我删除。
 
-
-
 ## 在线vscode的使用
+
+可直接看鱼皮视频笔记。
 
 ![image-20220508222201562](img/image-20220508222201562.png)
 
@@ -24,9 +24,13 @@
 
 注意：这种方法仅能阅读，必须要下载后在本地 vscode 才能打开。
 
-## Gitpod在线运行项目
+## Gitpod在线运行mini_gtest效果
 
 在线运行项目：在项目地址前加上`gitpod.io/#/`前缀
+
+```url
+https://gitpod.io/#/github.com/youhuangla/mini_gtest
+```
 
 用 github 登陆后
 
@@ -35,3 +39,46 @@
 在 TERMINAL 处查看运行环境
 
 ![image-20220508223203961](img/image-20220508223203961.png)
+
+### shell 中输入
+
+```shell
+g++ gtest_test.cpp
+./a.out
+```
+
+### 效果
+
+![image-20220508223845339](img/image-20220508223845339.png)
+
+## mini_gtest 相关
+
+### 环境
+
+linux（我用的 Ubuntu）、某些类 Unix 系统（MacOS）理论上可以
+
+gcc编译器
+
+### 源代码
+
+[geek_test_linked_list.h](geek_test_linked_list.h) 
+
+ [gtest_test.cpp](gtest_test.cpp) 
+
+ [geek_test_array.h](geek_test_array.h) 
+
+ [geek_test_color.h](geek_test_color.h) 
+
+ [geek_test_free.h](geek_test_free.h) 
+
+选择以上的  [gtest_test.cpp](gtest_test.cpp) 和其中一个 .h 头文件放在同一个文件夹下即可，虽然命名为 cpp 实际改个后缀就可以用 gcc 编译了。
+
+<img src="img/image-20220508225815392.png" alt="image-20220508225815392" style="zoom: 33%;" />
+
+[mini_gtest 文档点这里（其实就在文件夹下）](./my_gtest.md)
+
+另外，其实这个 mini 版的 gtest 我自己也没有完全理解透彻。在 valgrind 检查内存泄露后，有一处自动 free 掉我也没搞明白。但是其中的大致思想还是掌握了（四分之一？），这个项目很有特点的就是依赖较少，对只会 C 语言又想做项目的小白友好，也能理解一些软件工程的思想~~也许可以对面试官吹水~~。如果是一个自己的项目也可以轻易地在最后调用（毕竟很多语言都能调用C语言），让面试官眼前一亮~~装个小b~~，让你的项目锦上添花。
+
+ヾ(≧▽≦*)o
+
+所以，如果要 fork 或 star，请 fork 或 star 这个仓库吧，感谢各位大哥的厚爱了(￣▽￣)ノ
