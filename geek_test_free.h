@@ -18,7 +18,8 @@ int test_run_flag;
         test_run_flag = 0; \
     } \
 }
-#define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+#define EXPECT_EQ(a, b) EXPECT(a, b, ==)//Defining a macro called EXPECT_EQ that takes two arguments, a and b. It then calls the macro EXPECT with the arguments a, b, and ==.
+
 #define EXPECT_LT(a, b) EXPECT(a, b, <)
 #define EXPECT_GT(a, b) EXPECT(a, b, >)
 #define EXPECT_NE(a, b) EXPECT(a, b, !=)
@@ -62,14 +63,11 @@ void clear(struct test_function_info_t *head) {
     return ;
 }
 
-#define TEST(test_name, func_name) \
-void test_name##_##func_name(); \
-__attribute__((constructor)) \
-void register_##test_name##_##func_name() { \
-    add_test_function(#func_name "." #test_name, \
-                      test_name##_##func_name); \
-} \
-void test_name##_##func_name()
+
+
+
+
+#define TEST(test_name, func_name) void test_name##_##func_name(); __attribute__((constructor)) void register_##test_name##_##func_name() {  add_test_function(#func_name "." #test_name,      test_name##_##func_name); } void test_name##_##func_name()
 
 int RUN_ALL_TESTS() {
     struct test_function_info_t *p = head.next;
