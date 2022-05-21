@@ -82,21 +82,15 @@ https://github.com/nginx/nginx  => https://gitpod.io/#/github.com/nginx/nginx
 
 ![image-20220504230956747](img/image-20220504230956747.png)
 
-
-
 ## 5.项目推送
 
 根据自己的喜好让github推送自己感兴趣的优质项目
 
 <img src="img/image-20220504231235874.png" alt="image-20220504231235874" style="zoom:50%;" />
 
-
-
 获取邮件更新：
 
 ![image-20220504231259146](img/image-20220504231259146.png)
-
-
 
 更新：该文档已得到up主点赞ヾ(≧▽≦*)o
 
