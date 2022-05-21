@@ -14,16 +14,23 @@ $$ | $$ | $$ |$$ |$$ |  $$ |$$ |        \$$$$$$$ | \$$$$  |\$$$$$$$\ $$$$$$$  | 
                                          \______/                                            
 ```
 
-一个100行内的C语言仿 [GoogleTest](https://github.com/google/googletest) 测试框架（以及GitHub笔记）
+C语言100行内仿 [GoogleTest](https://github.com/google/googletest) 测试框架（以及GitHub笔记）
+
+鱼皮视频笔记完整版点[这里](#鱼皮-github-视频的笔记)，如果想要下载，点击右上角绿色的 Code ，再点击 Download ZIP。
 
 - [mini_gtest](#mini_gtest)
   - [mini_gtest 相关](#mini_gtest-相关)
     - [特点](#特点)
     - [上手指南](#上手指南)
+      - [安装要求](#安装要求)
+        - [操作系统](#操作系统)
+        - [软件](#软件)
+      - [本地运行](#本地运行)
+      - [GitHub运行](#github运行)
     - [源代码](#源代码)
     - [文档](#文档)
   - [仓库建立起因](#仓库建立起因)
-  - [鱼皮 GitHub 视频的原笔记](#鱼皮-github-视频的原笔记)
+  - [鱼皮 GitHub 视频的笔记](#鱼皮-github-视频的笔记)
   - [vscode建立该仓库的过程](#vscode建立该仓库的过程)
   - [在线vscode的使用](#在线vscode的使用)
   - [在线测试](#在线测试)
@@ -52,14 +59,27 @@ $$ | $$ | $$ |$$ |$$ |  $$ |$$ |        \$$$$$$$ | \$$$$  |\$$$$$$$\ $$$$$$$  | 
 
 所以，如果要 fork 或 star，请 fork 或 star 这个仓库吧，感谢各位大哥的厚爱了(￣▽￣)ノ
 
-
 ### 上手指南
+
+#### 安装要求
+
+##### 操作系统
 
 linux（我用的 Ubuntu）、某些类 Unix 系统（MacOS）理论上可以
 
-gcc编译器
+##### 软件
+
+C语言编译器: 推荐gcc编译器
 
 即 linux 下的C语言环境，只要能在 linux 下运行C语言，就能运行本项目。
+
+#### 本地运行
+
+只需要将其中一个 `.h` 头文件放到与源 C/C++ 代码同目录下，在代码头部添加 `#include "geek_test_free.h"`，添加测试语句（见[文档](#文档)），编译运行原 C/C++ 程序。可根据我的示例修改。
+
+#### GitHub运行
+
+见[在线测试](##在线测试)
 
 ### 源代码
 
@@ -96,7 +116,7 @@ gcc编译器
 
 所以在这里将鱼皮视频的笔记加到了这个小仓库里，临时整合了我自己学习，[人人都能学会的编程入门课 (geekbang.org)](https://time.geekbang.org/column/intro/100043901?tab=catalog)的学习笔记。我在胡船长代码的基础上进行了些微的整理与完善，使得代码完成度更高，并可以作为入门实践在github上在线运行，[Gitpod在线运行mini_gtest效果](#gitpod在线运行mini_gtest效果)。如有侵权请联系我删除。
 
-## 鱼皮 GitHub 视频的原笔记
+## 鱼皮 GitHub 视频的笔记
 
 同文件夹下的 github_note 中。[传送门](./github_note/github.md)
 
